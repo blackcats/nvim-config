@@ -36,7 +36,17 @@ set nu relativenumber
 set scrolloff=8
 set ttyfast
 set nowrap
-set tw=78
+"set tw=78
 set colorcolumn=80
 highlight Colorcolumn ctermbg=0 guibg=lightgrey
 
+" Plugin management
+call plug#begin('~/.config/nvim/plugged')
+Plug 'morhetz/gruvbox'
+call plug#end()
+
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'soft'
+let g:gruvbox_transparent_bg = '1'
+set background=dark
+"set t_ut=
