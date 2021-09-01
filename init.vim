@@ -28,7 +28,6 @@ set undofile
 
 " Manage status line
 set laststatus=2
-"clear statusline
 set statusline=
 set statusline=%<%f\ %y\ %r%m\ %=%-14.(%l:%c%V%)\ %<%P
 
@@ -38,7 +37,6 @@ set scrolloff=8
 set ttyfast
 set nowrap
 set tw=78
-set columns=80
 set colorcolumn=80
 highlight Colorcolumn ctermbg=0 guibg=lightgrey
 
