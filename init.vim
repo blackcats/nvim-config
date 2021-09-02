@@ -41,7 +41,8 @@ highlight Colorcolumn ctermbg=0 guibg=lightgrey
 
 " Manage Ppluggin
 call plug#begin('~/.config/nvim/plugged')
-Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'            " Color theme
+Plug 'hashivim/vim-terraform'       " Language 
 call plug#end()
 
 colorscheme gruvbox
