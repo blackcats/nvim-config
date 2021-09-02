@@ -16,6 +16,7 @@ set smartindent
 " search 
 set smartcase
 set incsearch
+set nohlsearch
 set ignorecase
 set showmatch
 
@@ -37,15 +38,22 @@ set scrolloff=8
 set ttyfast
 set nowrap
 set colorcolumn=80
-highlight Colorcolumn ctermbg=0 guibg=lightgrey
+set signcolumn=yes
+
+" Change update time from default (4000ms = 4s) to 500ms (0.5s)
+set updatetime=500
 
 " Manage Ppluggin
 call plug#begin('~/.config/nvim/plugged')
-Plug 'morhetz/gruvbox'            " Color theme
-Plug 'hashivim/vim-terraform'       " Language 
+Plug 'gruvbox-community/gruvbox'   " Color theme
+Plug 'hashivim/vim-terraform'      " Language 
 call plug#end()
 
-colorscheme gruvbox
-let g:gruvbox_transparent_bg = '1'
+" Color management
+"
 let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_transparent_bg = '1'
 set background=dark
+colorscheme gruvbox
+highlight Normal ctermbg=none
+highlight Colorcolumn ctermbg=grey
