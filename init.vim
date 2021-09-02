@@ -18,6 +18,7 @@ set smartcase
 set incsearch
 set ignorecase
 set showmatch
+set nohlsearch
 
 "set cursorline
 set mouse=""
@@ -36,17 +37,25 @@ set nu relativenumber
 set scrolloff=8
 set ttyfast
 set nowrap
-"set tw=78
 set colorcolumn=80
-highlight Colorcolumn ctermbg=0 guibg=lightgrey
+set signcolumn=yes
+
+" Change updatetime from the default (4000ms = 4s) to 500ms (0.5s)
+set updatetime=500
 
 " Plugin management
 call plug#begin('~/.config/nvim/plugged')
-Plug 'morhetz/gruvbox'
+Plug 'gruvbox-community/gruvbox'
+Plug 'hashivim/vim-terraform'
+Plug 'pearofducks/ansible-vim'
 call plug#end()
 
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'soft'
-let g:gruvbox_transparent_bg = '1'
+" Color management
+let g:gruvbox_contrast_dark = "hard"
 set background=dark
-"set t_ut=
+
+colorscheme gruvbox
+
+"highlight Colorcolumn ctermbg=darkgrey
+highlight Normal ctermbg=None
+hi CursorLineNr ctermfg=lightgrey
