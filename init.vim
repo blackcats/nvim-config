@@ -1,4 +1,13 @@
-"  Nvim starting configuration
+" Nvim starting configuration
+" ===========================
+"
+"-----------------------------------------------------------------------------
+" To install/do
+" -------------
+" plugin : lsp, ansible, treeXXX
+" finir la conf de telescope
+" renap pour split la fenetre
+" ----------------------------------------------------------------------------
 "
 " Read local .vimrc if present in the directory vim is launch
 set exrc
