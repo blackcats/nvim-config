@@ -1,4 +1,4 @@
-" Nvim starting configuration
+"  Nvim starting configuration
 "
 " Read local .vimrc if present in the directory vim is launch
 set exrc
@@ -24,7 +24,7 @@ set showmatch
 set mouse=""
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+set undodir=~/.config/nvim/undodir
 set undofile
 
 " Manage status line
@@ -46,14 +46,7 @@ set updatetime=500
 " Manage Ppluggin
 call plug#begin('~/.config/nvim/plugged')
 Plug 'gruvbox-community/gruvbox'   " Color theme
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'hashivim/vim-terraform'      " Language 
 call plug#end()
-
-" Color management
-"
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_transparent_bg = '1'
-set background=dark
-colorscheme gruvbox
-highlight Normal ctermbg=none
-highlight Colorcolumn ctermbg=grey
