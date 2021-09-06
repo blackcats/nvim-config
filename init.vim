@@ -1,4 +1,11 @@
 " Nvim starting configuration
+" ===========================
+"
+" TODO:
+" - configure telescope
+" - configure plugins terraform & ansible
+" - install & configure nvim-lsp plugin
+" - install & configure fzf plugin
 "
 " Read local .vimrc if present in the directory vim is launch
 set exrc
