@@ -24,7 +24,8 @@ set nohlsearch
 set mouse=""
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir
+"set undodir=~/.vim/undodir
+set undodir=~/.config/nvim/undodir
 set undofile
 
 " Manage status line
@@ -48,14 +49,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'hashivim/vim-terraform'
 Plug 'pearofducks/ansible-vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
-" Color management
-let g:gruvbox_contrast_dark = "hard"
-set background=dark
-
-colorscheme gruvbox
-
-"highlight Colorcolumn ctermbg=darkgrey
-highlight Normal ctermbg=None
-hi CursorLineNr ctermfg=lightgrey
