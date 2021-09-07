@@ -3,7 +3,7 @@
 "
 " TODO:
 " - configure telescope
-" - configure plugins terraform & ansible
+" - configure plugins ansible
 " - install & configure nvim-lsp plugin
 " - install & configure fzf plugin
 "
