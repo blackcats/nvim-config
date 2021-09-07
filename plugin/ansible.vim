@@ -1,3 +1,3 @@
-" terraform plugin configuration
-"
-
+" ansible plugin configuration
+" https://github.com/pearofducks/ansible-vim
+" 
