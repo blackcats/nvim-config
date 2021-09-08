@@ -55,7 +55,13 @@ set updatetime=500
 " Manage Ppluggin
 call plug#begin('~/.config/nvim/plugged')
 Plug 'gruvbox-community/gruvbox'   " Color theme
+
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'neovim/nvim-lspconfig'
+
 Plug 'hashivim/vim-terraform'      " Language 
 call plug#end()
