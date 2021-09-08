@@ -65,3 +65,12 @@ Plug 'neovim/nvim-lspconfig'
 
 Plug 'hashivim/vim-terraform'      " Language 
 call plug#end()
+
+let mapleader=" "
+
+nnoremap <leader>s :so %<CR>
+nnoremap <leader>w :w!<CR>
+nnoremap <C-q>q :q!<CR>
+nnoremap <C-q>w :wq!<CR>
+inoremap <C-c> <esc>
+inoremap <C-w> <esc>:w!<CR>
