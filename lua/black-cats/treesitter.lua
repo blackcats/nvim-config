@@ -1,6 +1,7 @@
-local treesitter = require('nvim-treesitter')
+local treesitter = require('nvim-treesitter.configs')
 
-treesitter.configs.setup {
+-- treesitter.configs.setup({
+treesitter.setup {
     ensure_installed = { "bash", "c", "lua", "python", "ruby", "vim" },
     highlight = { enable = true},
     indent = { enable = true },
