@@ -31,7 +31,6 @@ set nohlsearch
 set mouse=""
 set noswapfile
 set nobackup
-"set undodir=~/.vim/undodir
 set undodir=~/.config/nvim/undodir
 set undofile
 
@@ -56,7 +55,22 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'hashivim/vim-terraform'
 Plug 'pearofducks/ansible-vim'
+
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim', { 'do': 'make' }
+
+"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter',
+Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
+lua require("blackcats")
+let mapleader=" "
+
+nnoremap <leader>s :so %<CR>
+nnoremap <leader>w :w!<CR>
+nnoremap <C-q>q :q!<CR>
+nnoremap <C-q>w :wq!<CR>
+inoremap <C-c> <esc>
+inoremap <C-w> <esc>:w!<CR>
