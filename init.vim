@@ -66,6 +66,8 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'hashivim/vim-terraform'      " Language 
 call plug#end()
 
+lua require("black-cats")
+
 let mapleader=" "
 
 nnoremap <leader>s :so %<CR>
