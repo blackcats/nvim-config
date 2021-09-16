@@ -9,6 +9,14 @@ local function on_attach()
     -- TODO.... :/
 end
 
+-- Lua lsp server variable
+local system_name = "Linux"
+
+local sumneko_root_path = '/usr/local/lua-language-server'
+local sumneko_binary = sumneko_root_path.."/bin/"..system_name.."/lua-language-server"
+--
+
+
 require'lspconfig'.bashls.setup{}
 
 require'lspconfig'.ansiblels.setup{}
@@ -25,4 +33,14 @@ require'lspconfig'.vimls.setup{}
 -- require'lspconfig'.perlls.setup{}
 
 -- ruby -> view solargraph
+
 -- lua -> sumneko_lua
+require'lspconfig'.sumneko_lua.setup {
+    cmd = { sumneko_binary, "-E", sumneko_root_path .. "/main.lua" },
+    settings = {
+        Lua = {
+            version = 'LuaJT',
+        },
+    },
+}
+
