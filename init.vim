@@ -64,6 +64,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
 
 Plug 'hashivim/vim-terraform'      " Language 
+
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 lua require("black-cats")
