@@ -77,4 +77,5 @@ nnoremap <leader>w :w!<CR>
 nnoremap <C-q>q :q!<CR>
 nnoremap <C-q>w :wq!<CR>
 inoremap <C-c> <esc>
+inoremap <C-c><C-c> <esc>:q!<CR>
 inoremap <C-w> <esc>:w!<CR>
