@@ -62,9 +62,9 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'neovim/nvim-lspconfig'
+Plug 'tmux-plugins/vim-tmux'
 
 Plug 'hashivim/vim-terraform'      " Language 
-
 Plug 'plasticboy/vim-markdown'
 call plug#end()
 
