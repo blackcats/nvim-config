@@ -64,6 +64,7 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim', { 'do': 'make' }
 "Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter',
 Plug 'neovim/nvim-lspconfig'
+Plug 'tmux-plugins/vim-tmux'
 call plug#end()
 
 lua require("blackcats")
