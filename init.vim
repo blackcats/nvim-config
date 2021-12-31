@@ -55,14 +55,15 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'hashivim/vim-terraform'
 Plug 'pearofducks/ansible-vim'
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim', { 'do': 'make' }
 
-"Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-treesitter/nvim-treesitter',
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+"Plug 'nvim-treesitter/nvim-treesitter',
 Plug 'neovim/nvim-lspconfig'
 Plug 'tmux-plugins/vim-tmux'
 call plug#end()
