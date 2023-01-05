@@ -1,1 +1,1 @@
-print("hello world, this is dev config")
+require("blackcats")
