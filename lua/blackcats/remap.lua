@@ -1,5 +1,7 @@
 vim.g.mapleader = " "
 
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
 -- Say goodbye to arrow keys
 --
 vim.keymap.set({"n", "v"}, "<Up>", "<nop>")
