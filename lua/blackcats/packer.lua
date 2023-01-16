@@ -30,6 +30,48 @@ return require('packer').startup(function(use)
     end
   })
 
+  use { 'nvim-lualine/lualine.nvim' }
+
+  -- Install Treesitter
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+
+  -- Install LSP
+  use {
+    'VonHeikemen/lsp-zero.nvim',
+    requires = {
+      -- LSP Support
+      {'neovim/nvim-lspconfig'},
+      {'williamboman/mason.nvim'},
+      {'williamboman/mason-lspconfig.nvim'},
+
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},
+      {'hrsh7th/cmp-buffer'},
+      {'hrsh7th/cmp-path'},
+      {'saadparwaiz1/cmp_luasnip'},
+      {'hrsh7th/cmp-nvim-lsp'},
+      {'hrsh7th/cmp-nvim-lua'},
+
+      -- Snippets
+      {'L3MON4D3/LuaSnip'},
+      -- Snippet Collection (Optional)
+      {'rafamadriz/friendly-snippets'},
+    }
+  }
+
+  -- tmux.conf vi mplufin
+  use { 'tmux-plugins/vim-tmux' }
+
+  -- Git plugins
+  use { 'tpope/vim-fugitive' }
+
+  use { 'mbbill/undotree' }
+
+  -- to test
+  use { 'lewis6991/gitsigns.nvim' }
+  use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
+  -- use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
