@@ -64,12 +64,12 @@ return require('packer').startup(function(use)
 
   -- Git plugins
   use { 'tpope/vim-fugitive' }
+  use { 'lewis6991/gitsigns.nvim' }
 
   use { 'mbbill/undotree' }
+  use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
 
   -- to test
-  use { 'lewis6991/gitsigns.nvim' }
-  use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
   -- use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
 
   -- Automatically set up your configuration after cloning packer.nvim
