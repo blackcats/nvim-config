@@ -80,3 +80,9 @@ nnoremap <C-q>q :q!<CR>
 nnoremap <C-q>w :wq!<CR>
 inoremap <C-c> <esc>
 inoremap <C-w> <esc>:w!<CR>
+
+" Disable arrow keys
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
