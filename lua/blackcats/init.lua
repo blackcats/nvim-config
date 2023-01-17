@@ -1,3 +1,4 @@
-require('blackcats.telescope')
-require('blackcats.treesitter')
-require('blackcats.lsp')
+print("Welcome to my kingdom")
+require("blackcats.packer")
+require("blackcats.set")
+require("blackcats.remap")
