@@ -59,8 +59,12 @@ return require('packer').startup(function(use)
     }
   }
 
+  -- Install markdown 
+  use {'preservim/vim-markdown'}
+
   -- tmux.conf vi mplufin
   use { 'tmux-plugins/vim-tmux' }
+  use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
 
   -- Git plugins
   use { 'tpope/vim-fugitive' }
