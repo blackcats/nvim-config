@@ -59,6 +59,15 @@ return require('packer').startup(function(use)
     }
   }
 
+  -- terraform
+  use {'hashivim/vim-terraform'}
+
+  -- markdown
+  use {'preservim/vim-markdown'}
+
+  -- Jenkinsfiles
+  use {'martinda/Jenkinsfile-vim-syntax'}
+
   -- tmux.conf vi mplufin
   use { 'tmux-plugins/vim-tmux' }
 
