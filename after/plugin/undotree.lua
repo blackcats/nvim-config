@@ -2,7 +2,10 @@
 
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
-vim.g.undotree_WindowLayout = 2
-vim.g.undotree_ShortIndicators = 0
-vim.g.undotree_DiffpaneHeight = 15
-vim.g.undotree_DiffCommand = "diff -u"
+local g = vim.g
+
+g.undotree_WindowLayout = 2
+g.undotree_ShortIndicators = 0
+g.undotree_DiffpaneHeight = 15
+g.undotree_DiffCommand = "diff -u"
+g.undotree_SetFocusWhenToggle = 1
