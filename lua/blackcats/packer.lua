@@ -35,6 +35,23 @@ return require('packer').startup(function(use)
   -- Install Treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
+  -- End wise
+  use {
+    "RRethy/nvim-treesitter-endwise",
+    requires = "nvim-treesitter",
+    -- wants = "nvim-treesitter",
+    event = "InsertEnter",
+  }
+
+  -- Auto pairs
+  use {
+    "windwp/nvim-autopairs",
+    module = { 
+      "nvim-autopairs.completion.cmp",
+      "nvim-autopairs" 
+    },
+  }
+
   -- Install LSP
   use {
     'VonHeikemen/lsp-zero.nvim',
