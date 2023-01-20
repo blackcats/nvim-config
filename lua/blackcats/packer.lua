@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- colors themes
   use({
     'rose-pine/neovim',
     as = 'rose-pine',
@@ -29,6 +30,8 @@ return require('packer').startup(function(use)
         vim.cmd('colorscheme rose-pine')
     end
   })
+
+  use {'navarasu/onedark.nvim'}
 
   use { 'nvim-lualine/lualine.nvim' }
 
@@ -46,9 +49,9 @@ return require('packer').startup(function(use)
   -- Auto pairs
   use {
     "windwp/nvim-autopairs",
-    module = { 
+    module = {
       "nvim-autopairs.completion.cmp",
-      "nvim-autopairs" 
+      "nvim-autopairs"
     },
   }
 
