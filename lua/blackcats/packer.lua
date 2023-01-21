@@ -23,15 +23,12 @@ return require('packer').startup(function(use)
   }
 
   -- colors themes
-  use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
---    config = function()
--- vim.cmd('colorscheme rose-pine')
--- end
-  })
-
-  use {'navarasu/onedark.nvim'}
+  use { 'rose-pine/neovim', as = 'rose-pine' }
+  use { 'navarasu/onedark.nvim' }
+  use { 'EdenEast/nightfox.nvim' }
+  use { 'projekt0n/github-nvim-theme', tag = 'v0.0.7' }
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use { 'morhetz/gruvbox' }
 
   use { 'nvim-lualine/lualine.nvim' }
 

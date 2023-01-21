@@ -11,6 +11,26 @@ require('onedark').setup({
     transparent = true,
 })
 
+require('github-theme').setup({
+    theme_style = "dimmed",
+    transparent = true,
+})
+
+require("nightfox").setup({
+    options = {
+        transparent = true,
+    }
+})
+
+require("catppuccin").setup({
+    flavour = "macchiato",
+    -- flavour = "mocha",
+    transparent_background = true,
+})
+
+-- gruvbox configurations
+vim.g.gruvbox_contrast_dark = "hard"
+
 function MyColor(color)
 	color = color or "onedark"
 	vim.cmd.colorscheme(color)
