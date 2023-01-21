@@ -12,7 +12,8 @@ end)
 telescope.setup({
     defaults = {
         file_ignore_patterns = {
-            "undodir/"
+            "undodir/",
+            "plugged/"
         }
     }
 })
