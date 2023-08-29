@@ -19,3 +19,10 @@ vim.keymap.set("n", "<C-q>w", ":wq!<CR>")
 vim.keymap.set("i", "<C-w>", "<esc>:w!<CR>")
 vim.keymap.set("i", "<C-c><C-c>", "<esc>:q!<CR>")
 
+-- Navigate buffers
+vim.keymap.set("n", "<S-l>", ":bnext<CR>")
+vim.keymap.set("n", "<S-h>", ":bprevious<CR>")
+
+-- remap split keymap
+vim.keymap.set("n", "<leader><BAR>", ":vsplit<CR>")
+vim.keymap.set("n", "<leader>-", ":split<CR>")
