@@ -112,7 +112,6 @@ return require('packer').startup(function(use)
   use { 'lewis6991/gitsigns.nvim' }
 
   use { 'mbbill/undotree' }
-  use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
 
   -- to test
   -- use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
